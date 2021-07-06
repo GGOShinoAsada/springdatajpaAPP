@@ -2,11 +2,13 @@ package com.company.sequrity.SEQ.service;
 
 import com.company.sequrity.SEQ.model.Author;
 import com.company.sequrity.SEQ.model.Book;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+//@Service
+@Component
 public interface BookService {
     List<Book> findAll();
     Book findBookById(int id);

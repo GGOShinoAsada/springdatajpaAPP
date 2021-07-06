@@ -5,6 +5,7 @@ import com.company.sequrity.SEQ.dao.BookDao;
 import com.company.sequrity.SEQ.model.Author;
 import com.company.sequrity.SEQ.model.Book;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 
@@ -21,10 +22,12 @@ public class BookServiceImpl implements BookService {
     private BookDao dao1;
     private AuthorDao dao2;
     @Autowired
+    //@Qualifier("AuthorDao")
     public void setDao2(AuthorDao dao2) {
         this.dao2 = dao2;
     }
     @Autowired
+    //@Qualifier("BookDao")
     public void setDao1(BookDao dao1) {
         this.dao1 = dao1;
     }

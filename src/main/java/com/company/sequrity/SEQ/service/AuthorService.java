@@ -1,11 +1,13 @@
 package com.company.sequrity.SEQ.service;
 
 import com.company.sequrity.SEQ.model.Author;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-@Service
+//@Service
+@Component
 public interface AuthorService {
     List<Author> findAll();
     Author findAuthorById(int id);
